@@ -1,135 +1,242 @@
 /* style.css — Projeto Mel com estilo premium */
 
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  /* NAVBAR */
+  .navbar {
+    background-color: #004853;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  }
+  
+  .navbar .logo {
+    font-size: 1.8rem;
+    font-weight: 800;
+    color: #00b9bd;
+    /* color: #96fdff; */
+  }
+  
+  .navbar .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .navbar .nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s;
+    font-family: Arial, Helvetica, sans-serif;
+  
+  }
+  
+  .navbar .nav-links a:hover {
+    color: #00b9bd;
+  }
+  
+  /* CONTAINER GERAL */
+  .container {
+    width: 85%;
+    max-width: none;
+    margin: auto;
+    padding: 40px 5vw;
+  }
+  /* INTRODUÇÃO */
+  .intro {
+    margin-bottom: 40px;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .intro h1 {
+    font-family:sans-serif 10px;
+    font-size: 2.8rem;
+    color: #004853;
+    margin-bottom: 10px;
+  }
 
-body {
-  font-family: 'Montserrat', sans-serif;
-  background-color: #f4f4f9;
-  color: #333;
-  line-height: 1.6;
-}
+  h1:hover{
+    transform: scale(1.03);
+    transition: transform 1s ease;
 
-/* NAVBAR */
-.navbar {
-  background-color: #004853;
-  color: white;
-  padding: 20px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
-}
+  }
 
-.navbar .logo {
-  font-size: 1.8rem;
-  font-weight: 800;
-  color: #00b9bd;
-  /* color: #96fdff; */
-}
+  .container h2{
+    color: #004853;
+  }
+  
+  .intro p{
+    font-size: 20px;
+    max-width: 100%;
+    font-weight: 500;
+    font-family:Arial, Helvetica, sans-serif;
+  }
+  
+  .intro strong {
+    color: #007e80;
+  }
+  img{
+    width: 30%;
+  }
+  img:hover{
+    transform: scale(1.03);
+    transition: transform 1s ease;
+  }
+  /* SEÇÕES DE IMAGEM */
+  .image-section {
+    margin-bottom: 40px;
+    background: #ffffff;
+    padding: 30px;
+    border-left: 5px solid #00b9bd;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  }
+  
+  .image-section h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #14213d;
+  }
+  
+  .image-placeholder {
+    width: 100%;
+    height: 250px;
+    background-color: #e0e0e0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-style: italic;
+    color: #666;
+    border-radius: 8px;
+    margin-top: 10px;
+  }
+  
+  /* BOX DE INFORMAÇÃO COM FUNDO */
+  .info-box {
+    background: #fefcf3;
+    padding: 30px;
+    margin-bottom: 40px;
+    border: 1px solid #00b9bd;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  }
+  
+  /* RODAPÉ */
+  footer {
+    background-color: #004853;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 60px;
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
+  }
+  
+  
+  /* Listas mais elegantes */
+  ul, ol {
+    list-style: none;
+    padding-left: 0;
+  }
+  
+  ul li::before {
+    content: "•";
+    color: #00b9bd;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+  }
+  
+  /* Melhor responsividade */
+  @media (max-width: 768px) {
+    .container {
+      padding: 20px 10px;
+    }
+    .navbar {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    .navbar .nav-links {
+      flex-direction: column;
+      gap: 10px;
+      width: 100%;
+      margin-top: 10px;
+    }
+  }
+  .navbar .nav-links a {
+    font-size: 1.1rem; /* AUMENTA O TAMANHO DA FONTE */
+    font-weight: 600;
+    padding: 8px 12px; /* UM RESPIRO EXTRA NAS LATERAIS */
+    transition: all 0.3s ease;
+  }
+  
 
-.navbar .nav-links {
-  list-style: none;
-  display: flex;
-  gap: 20px;
-}
+  .colunas {
+    display: flex;
+    gap: 30px;
+    margin-top: 40px;
+    flex-wrap: nowrap; /* impede quebrar em linha nova */
+  }
+  
+  .coluna-grande {
+    flex: 0 0 60%; /* Não cresce, não encolhe, base 60% */
+    max-width: 60%; /* limite máximo */
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  }
+  
+  .coluna-menor {
+    flex: 0 0 40%;
+    max-width: 40%;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  }
+  
+  @media (max-width: 768px) {
+    .colunas {
+      flex-wrap: wrap;
+      flex-direction: column;
+    }
+    .coluna-grande,
+    .coluna-menor {
+      flex: 1 1 100%;
+      max-width: 100%;
+    }
+  }
 
-.navbar .nav-links a {
-  color: white;
-  text-decoration: none;
-  font-weight: 600;
-  transition: color 0.3s;
-  font-family: Arial, Helvetica, sans-serif;
+  .inicioh2{
+    font-size: 18px;
+  }
 
-}
-
-.navbar .nav-links a:hover {
-  color: #00b9bd;
-}
-
-/* CONTAINER GERAL */
-.container {
-  max-width: 1100px;
-  margin: auto;
-  padding: 40px 20px;
-}
-
-/* INTRODUÇÃO */
-.intro {
-  margin-bottom: 40px;
-  background: #ffffff;
-  padding: 30px;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  text-align: center;
-}
-
-.intro h1 {
-  font-family:sans-serif 10px;
-  font-size: 2rem;
-  color: #004853;
-  margin-bottom: 10px;
-}
-
-.intro p{
-  font-size: 19px;
-}
-
-.intro strong {
-  color: #007e80;
-}
-
-/* SEÇÕES DE IMAGEM */
-.image-section {
-  margin-bottom: 40px;
-  background: #ffffff;
-  padding: 30px;
-  border-left: 5px solid #fca311;
-  border-radius: 10px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
-}
-
-.image-section h2 {
-  font-size: 1.8rem;
-  margin-bottom: 10px;
-  color: #14213d;
-}
-
-.image-placeholder {
-  width: 100%;
-  height: 250px;
-  background-color: #e0e0e0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-style: italic;
-  color: #666;
-  border-radius: 8px;
-  margin-top: 10px;
-}
-
-/* BOX DE INFORMAÇÃO COM FUNDO */
-.info-box {
-  background: #fefcf3;
-  padding: 30px;
-  margin-bottom: 40px;
-  border: 1px solid #fca311;
-  border-radius: 10px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-}
-
-/* RODAPÉ */
-footer {
-  background-color: #14213d;
-  color: white;
-  text-align: center;
-  padding: 20px 0;
-  margin-top: 60px;
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
-}
+  /* .intro intro-lado-a-lado .intro-img img{
+    text-align: center;
+    border-radius: 100px ;
+    width: 10px 30px;
+  } */
+  
