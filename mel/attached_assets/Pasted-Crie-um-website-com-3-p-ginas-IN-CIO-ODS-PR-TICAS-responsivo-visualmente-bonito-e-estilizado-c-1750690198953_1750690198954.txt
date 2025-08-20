@@ -1,0 +1,124 @@
+Crie um website com 3 páginas (INÍCIO, ODS, PRÁTICAS), responsivo, visualmente bonito e estilizado com tons de verde, branco e cinza claro. O site deve se chamar EcoConecta e abordar o descarte consciente de resíduos eletrônicos e o consumo sustentável com base nos Objetivos de Desenvolvimento Sustentável (ODS), especialmente a ODS 17.
+
+O site deve conter imagens reais linkadas externamente (ex: Unsplash, Pexels ou via Google Imagens). Os componentes devem usar design com sombras suaves, cantos arredondados, animações de entrada, e layout moderno responsivo com Flexbox ou CSS Grid.
+
+📄 1. Página INÍCIO (index.html)
+Conteúdo:
+Header com logo "EcoConecta" e menu (INÍCIO | ODS | PRÁTICAS)
+
+Hero section com:
+
+Título: “Descarte Eletrônico Consciente”
+
+Subtítulo: “Transformando lixo em solução”
+
+Imagem de impacto (link da Unsplash, ex:
+https://images.unsplash.com/photo-1616394583047-8da2f3e4697d)
+
+Texto introdutório com o objetivo do projeto
+
+3 cards explicativos:
+
+Impacto do lixo eletrônico
+
+Breve texto + ícone de lixo tóxico
+
+Imagem: https://images.unsplash.com/photo-1581092787765-4c4e04f83e5f
+
+Benefícios do descarte consciente
+
+Breve texto + ícone de planeta
+
+Imagem: https://images.unsplash.com/photo-1558449033-0210e92b83e1
+
+Ambientes de descarte eletrônico confiáveis
+
+Lista fictícia de locais:
+
+GreenTech Coleta (Joinville)
+
+RecycleNow (Florianópolis)
+
+Ponto E-Lixo (Curitiba)
+
+Incluir ícones de localização + imagem: https://images.unsplash.com/photo-1581090700227-1e8b0d203d1f
+
+Rodapé:
+Frase de engajamento: “Cada dispositivo conta. Faça sua parte.”
+
+Redes sociais fictícias (ícones)
+
+📄 2. Página ODS (ods.html)
+Conteúdo:
+Título: “O que são as ODS?”
+
+Texto explicativo sobre os 17 Objetivos de Desenvolvimento Sustentável da ONU
+
+Destaque visual para a ODS 17 – Parcerias:
+
+Mostrar como a cooperação global contribui para resolver o problema do lixo eletrônico
+
+Usar imagem ilustrativa: https://sdgs.un.org/sites/default/files/goals/E_SDG_Icons-17.jpg
+
+Botão "Saiba mais" com link para:
+https://brasil.un.org/pt-br/sdgs
+
+📄 3. Página PRÁTICAS (praticas.html)
+Conteúdo:
+Título: “Práticas para o Consumo Consciente”
+
+Galeria de cards com boas práticas:
+
+Prolongue a vida útil dos seus eletrônicos
+
+Doe ou recicle antes de jogar fora
+
+Prefira marcas com logística reversa
+
+Pesquise antes de comprar (impacto ambiental)
+
+Utilize apps de descarte inteligente
+
+Cada card com ícone + texto + imagem pequena
+
+Imagem ilustrativa do topo:
+https://images.unsplash.com/photo-1542751110-97427bbecf20
+
+🎨 Design Visual
+Paleta:
+
+Verde principal: #27ae60
+
+Verde escuro: #14532d
+
+Cinza claro: #f2f2f2
+
+Texto escuro: #333
+
+Fonte: 'Poppins' via Google Fonts
+
+Menu fixo com destaque de página ativa
+
+Cards com hover, sombras, transições suaves (transition: all 0.3s ease)
+
+Layout responsivo: 1 coluna (mobile), 2 a 3 colunas (desktop)
+
+⚙️ Funcionalidades JS (opcional)
+Menu hambúrguer mobile
+
+Scroll suave
+
+Animação de fade-in com IntersectionObserver
+
+Validação básica em formulário (se for adicionado)
+
+📦 Tecnologias
+HTML5
+
+CSS3
+
+JavaScript básico (só para interações leves)
+
+Biblioteca opcional: AOS.js para animações on scroll
+
+Links externos para imagens (sem download local)
